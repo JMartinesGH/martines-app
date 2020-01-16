@@ -4,7 +4,6 @@ import '../css/TradeInformation.css';
 export default function TrandeInformation() {
     return (
         <div id='TradeInformation' className="column right">
-            <h1>Trade Information</h1>
             <div className='info'>
                 <h2>You are trading with USER</h2>
                 <h3>Started XX minutes ago</h3>

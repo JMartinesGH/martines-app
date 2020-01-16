@@ -1,5 +1,54 @@
 #Messages {
   padding: 1.2rem;
+  background: #f5f7fa;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#Messages header, #Messages article, #Messages footer {
+  display: block;
+}
+#Messages header {
+  flex: 1;
+}
+#Messages article {
+  flex: 8;
+}
+#Messages footer {
+  height: 100px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: calc(100vh - 260px);
+  background: #f5f7fa;
+  width: 93%;
+}
+#Messages footer form {
+  width: 100%;
+  background: white;
+  display: flex;
+}
+#Messages footer input {
+  flex: 9;
+  padding: 10px 0 10px 5px;
+  outline: none;
+  border: none;
+}
+#Messages footer input:focus {
+  border-bottom: 1px solid #30364d;
+}
+#Messages footer button {
+  flex: 1;
+  border: 0;
+  outline: none;
+  background: #fff;
+  color: #48c57f;
+}
+#Messages footer button:hover {
+  border-bottom: 1px solid #48c57f;
 }
 
 /*# sourceMappingURL=Messages.css.map */

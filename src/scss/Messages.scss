@@ -1,3 +1,61 @@
 #Messages{
     padding: 1.2rem;
+    background: #f5f7fa;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    header,article,footer{
+        display: block;
+    }
+    
+    header{
+        flex: 1;
+    }
+
+    article{
+        flex: 8;
+    }
+
+    footer{
+        height: 100px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content:center;
+        position: absolute;
+        top: calc(100vh - 260px);
+        background: #f5f7fa;
+        width: 93%;
+
+        form{
+            width: 100%;
+            background: white;
+            display: flex;
+        }
+
+        input{
+            flex: 9;
+            padding: 10px 0 10px 5px;
+            outline: none;
+            border: none;
+
+            &:focus{
+                border-bottom: 1px solid #30364d;
+            }
+        }
+
+        button{
+            flex: 1;
+            border: 0;
+            outline: none;
+            background: #fff;
+            color: rgb(72,197,127);
+            &:hover{
+                border-bottom: 1px solid rgb(72,197,127);
+            }
+        }
+    }
+
 }

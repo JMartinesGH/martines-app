@@ -10,7 +10,7 @@ export default function TradesList() {
                         <div className="trade-body">
                         <h4>User is buying</h4>
                         <h2>Payment Method</h2>
-                        <h3>30 USD(0.005412345 BTC)</h3>
+                        <h4>30 USD(0.005412345 BTC)</h4>
                         </div>
                         <div className='avatar'>Avatar</div>
                     </div>
@@ -21,7 +21,7 @@ export default function TradesList() {
                         <div className="trade-body">
                         <h4>User is buying</h4>
                         <h2>Payment Method</h2>
-                        <h3>30 USD(0.005412345 BTC)</h3>
+                        <h4>30 USD(0.005412345 BTC)</h4>
                         </div>
                         <div className='avatar'>Avatar</div>
                     </div>
@@ -32,7 +32,7 @@ export default function TradesList() {
                         <div className="trade-body">
                             <h4>User is buying</h4>
                             <h2>Payment Method</h2>
-                            <h3>30 USD(0.005412345 BTC)</h3>
+                            <h4>30 USD(0.005412345 BTC)</h4>
                         </div>
                         <div className='avatar'>Avatar</div>
                     </div>
@@ -43,7 +43,7 @@ export default function TradesList() {
                         <div className="trade-body">
                         <h4>User is buying</h4>
                         <h2>Payment Method</h2>
-                        <h3>30 USD(0.005412345 BTC)</h3>
+                        <h4>30 USD(0.005412345 BTC)</h4>
                         </div>
                         <div className='avatar'>Avatar</div>
                     </div>
