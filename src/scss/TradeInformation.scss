@@ -1,0 +1,22 @@
+
+#TradeInformation{
+    display: flex;
+    align-items: center;
+
+    .info{
+        text-align: center;
+    }
+
+    .grid{
+        display: inline-grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 100px;
+        grid-gap: 5px;
+        width: 100%;
+
+        .item{
+            place-self: center;
+            text-align: center;
+        }
+    }
+}

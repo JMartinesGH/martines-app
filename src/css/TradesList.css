@@ -1,0 +1,55 @@
+#Trades {
+  border-width: 0 2px;
+  border-color: #c5c5c5;
+  border-style: solid;
+}
+#Trades ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+#Trades ul li {
+  display: block;
+  border-bottom: 2px inset;
+  border-color: transparent transparent #c5c5c5 transparent;
+  overflow: visible;
+}
+#Trades ul li > div {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#Trades ul li:hover {
+  background-color: #f9f9f9;
+}
+#Trades ul li:hover > div {
+  transition: all 0.1s;
+  transform: translateX(10px);
+  background-color: #f9f9f9;
+}
+#Trades ul .active {
+  background-color: #f5f5f5 !important;
+}
+#Trades ul .active div {
+  transform: translateX(20px);
+  height: 100%;
+  background-color: #f5f5f5;
+}
+#Trades ul .active:hover > div {
+  transition: all 0.25s;
+  transform: translateX(20px);
+  background-color: #f5f5f5;
+}
+#Trades ul .trade-body {
+  width: 75%;
+  display: inline-block;
+}
+#Trades ul .avatar {
+  width: 25%;
+  align-self: center;
+  text-align: center;
+}
+
+/*# sourceMappingURL=TradesList.css.map */

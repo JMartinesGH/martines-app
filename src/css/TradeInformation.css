@@ -1,0 +1,20 @@
+#TradeInformation {
+  display: flex;
+  align-items: center;
+}
+#TradeInformation .info {
+  text-align: center;
+}
+#TradeInformation .grid {
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 5px;
+  width: 100%;
+}
+#TradeInformation .grid .item {
+  place-self: center;
+  text-align: center;
+}
+
+/*# sourceMappingURL=TradeInformation.css.map */
