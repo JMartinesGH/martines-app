@@ -10,12 +10,12 @@ export default function TrandeInformation() {
                 <button className='release-btn'>Release bitcoins</button>
             </div>
             <div className='grid'>
-                <div className='item'>Icon</div>
-                <div className='item'># of Trades</div>
-                <div className='item'>Trade Status</div>
-                <div className='item'>Trade Hash</div>
-                <div className='item'>Amount USD</div>
-                <div className='item'>AMOUNT BTC</div>
+                <div className='item'><span>Icon</span><span>Avatar</span></div>
+                <div className='item'><span># of Trades</span><span>4</span></div>
+                <div className='item'><span>Trade Status</span><span className='positive'>Paid</span></div>
+                <div className='item'><span>Trade Hash</span><span><span ></span>{Math.floor(Math.random() * Math.floor(10000000))}</span></div>
+                <div className='item'><span>Amount USD</span><span>25.00</span></div>
+                <div className='item'><span>AMOUNT BTC</span><span>0.0002885858585</span></div>
             </div>
         </div>
     );

@@ -16,5 +16,8 @@
   place-self: center;
   text-align: center;
 }
+#TradeInformation .grid .item span {
+  display: block;
+}
 
 /*# sourceMappingURL=TradeInformation.css.map */

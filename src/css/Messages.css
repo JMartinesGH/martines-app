@@ -12,8 +12,38 @@
 #Messages header {
   flex: 1;
 }
+#Messages header hr {
+  color: #cfd6e0;
+}
 #Messages article {
   flex: 8;
+  overflow-y: auto;
+  margin-bottom: 100px;
+  max-height: calc( 100vh - 360px);
+}
+#Messages article ul {
+  list-style: none;
+}
+#Messages article li {
+  padding: 20px 0;
+  display: block;
+  display: flex;
+  flex-direction: row;
+}
+#Messages article li .avatar {
+  width: 20%;
+  text-align: center;
+}
+#Messages article li .message-body {
+  background: #FFF;
+  max-width: 75%;
+  padding: 10px;
+}
+#Messages article li.received {
+  flex-direction: row-reverse;
+}
+#Messages article li.received div.message-body {
+  background: #5c7394;
 }
 #Messages footer {
   height: 100px;
@@ -22,7 +52,7 @@
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: calc(100vh - 260px);
+  top: calc(100vh - 166px);
   background: #f5f7fa;
   width: 93%;
 }

@@ -16,6 +16,9 @@
         .item{
             place-self: center;
             text-align: center;
+            span{
+                display: block;
+            }
         }
     }
 }

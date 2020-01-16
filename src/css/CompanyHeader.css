@@ -1,8 +1,62 @@
 #CompanyHeader {
-  background: #30364d;
-  color: white;
   width: 100%;
   height: 160px;
+  border-bottom: 1px solid #cfd6e0;
+}
+#CompanyHeader .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+}
+#CompanyHeader .row {
+  display: flex;
+  flex-direction: row;
+}
+#CompanyHeader .blue {
+  background: #30364d;
+  color: white;
+  padding: 0 0 0 20px;
+  justify-content: space-between;
+}
+#CompanyHeader .title {
+  flex: 1;
+}
+#CompanyHeader .trade-menu, #CompanyHeader .main-menu {
+  list-style: none;
+  padding: 0px 0;
+  margin: 0 0 0 40px;
+}
+#CompanyHeader .trade-menu li, #CompanyHeader .main-menu li {
+  display: inline-block;
+  padding: 30px 30px;
+  cursor: pointer;
+}
+#CompanyHeader .main-menu {
+  display: flex;
+  flex-flow: row;
+  align-self: flex-end;
+}
+#CompanyHeader .main-menu .active {
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+}
+#CompanyHeader .trade-menu {
+  color: #57595f;
+  border-left: 1px solid #cfd6e0;
+}
+#CompanyHeader .trade-menu li {
+  border-right: 1px solid #cfd6e0;
+  border-left: 1px solid #cfd6e0;
+}
+#CompanyHeader .trade-menu li:hover {
+  background-color: #f9f9f9;
+}
+#CompanyHeader .trade-menu li.active {
+  background-color: #f5f7fa;
+}
+#CompanyHeader .white {
+  background: #fff;
 }
 #CompanyHeader h1 {
   color: #fff;

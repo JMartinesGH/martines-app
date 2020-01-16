@@ -12,10 +12,52 @@
     
     header{
         flex: 1;
+
+        hr{
+            color: #cfd6e0;
+        }
     }
 
     article{
         flex: 8;
+        overflow-y: auto;
+        margin-bottom: 100px;
+        max-height:calc( 100vh - 360px);
+
+        ul{
+            list-style: none;
+        }
+
+        li{
+            padding: 20px 0;
+            display: block;
+            display: flex;
+            flex-direction: row;
+            div{
+                // background: white;
+                
+            }
+
+            .avatar{
+                width: 20%;
+                text-align: center;
+            }
+
+            .message-body{
+                background: #FFF;
+                max-width: 75%;
+                padding: 10px;
+            }
+            
+            &.received{
+                flex-direction: row-reverse;
+                div{
+                    &.message-body{
+                        background: #5c7394;
+                    }
+                }
+            }
+        }
     }
 
     footer{
@@ -25,7 +67,7 @@
         flex-direction: column;
         justify-content:center;
         position: absolute;
-        top: calc(100vh - 260px);
+        top: calc(100vh - 166px);
         background: #f5f7fa;
         width: 93%;
 
