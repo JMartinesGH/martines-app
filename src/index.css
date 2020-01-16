@@ -5,12 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-size: 12px;
 }
 
 h1{
@@ -34,18 +29,19 @@ h4{
 }
 
 .container{
-  display: flex;
-  max-width: 1440px;
+  display: block;
   width: 100%;
   flex: 1;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
+  max-height: calc(100vh - 160px);
+  overflow: hidden;
 }
 
 .App{
   display:flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   min-width: 100vw;
   margin: 0 auto;
   padding: 0;
@@ -56,6 +52,7 @@ h4{
 }
 
 .column {
+  height: 100%;
   display: flex;
   flex: 1;
   flex-grow: 2;
@@ -64,9 +61,8 @@ h4{
 }
 
 .aside {
-  /* transform: translateX(100%) */
-  background: #c7c7c7;
-  flex-grow: 3;
+  transform: translateX(100%);
+  /* flex-grow: 3; */
 }
 
 .positive{
@@ -92,3 +88,42 @@ h4{
   background-color: rgb(67, 173, 115);
 }
 
+.menu-button{
+  display: inline-block;
+  
+}
+
+.menu-button[data-for="main-menu"]{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+}
+
+@media screen and (min-width: 1024px){
+  body{
+    font-size: 16px;
+  }
+  .menu-button{
+    display: none;
+  }
+
+  .App{
+    display: flex;
+  }
+
+  .container{
+    display: flex;
+    max-width: 1440px;
+  }
+
+  .column{
+    /* height: auto; */
+  }
+  
+  .aside {
+    transform: translateX(0%);
+    /* flex-grow: 3; */
+  }
+}

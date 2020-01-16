@@ -3,7 +3,7 @@ import '../css/TradeInformation.css';
 
 export default function TrandeInformation() {
     return (
-        <div id='TradeInformation' className="column right">
+        <div id='TradeInformation' className="column right aside">
             <div className='info'>
                 <h2>You are trading with USER</h2>
                 <h3>Started XX minutes ago</h3>

@@ -1,6 +1,9 @@
 #TradeInformation {
   display: flex;
   align-items: center;
+  border-width: 0 2px;
+  border-color: #cfd6e0;
+  border-style: solid;
 }
 #TradeInformation .info {
   text-align: center;

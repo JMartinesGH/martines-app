@@ -44,15 +44,16 @@
 }
 #Messages article li.received div.message-body {
   background: #5c7394;
+  color: #fff;
 }
 #Messages footer {
   height: 100px;
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
-  top: calc(100vh - 166px);
+  bottom: 0;
   background: #f5f7fa;
   width: 93%;
 }
