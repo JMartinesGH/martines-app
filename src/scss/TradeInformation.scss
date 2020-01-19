@@ -4,9 +4,20 @@
     border-width: 0 2px;
     border-color:#cfd6e0;
     border-style: solid;
+    transform: translateX(100%);
+    width: 100%;
+    transition: transform 0.5s ease-out;
+    top: 120px;
+    position: absolute;
 
     .info{
         text-align: center;
+    }
+
+    &.display{
+        transform: translate(0);
+        display: flex;
+        transition: transform 0.5s ease-in;
     }
 
     .grid{
@@ -23,5 +34,10 @@
                 display: block;
             }
         }
+    }
+
+    @media screen and (min-width: 1024px) {
+        top: 0;
+        position: relative;
     }
 }

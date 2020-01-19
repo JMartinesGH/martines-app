@@ -1,54 +1,51 @@
 import React from 'react'
 import '../css/TradesList.css';
 
-export default function TradesList() {
-    return (
-        <div id='Trades' className="column">
-            <ul>
-                <li key={Math.floor(Math.random() * Math.floor(100))}>
-                    <div>
-                        <div className="trade-body">
-                        <h4>User is buying</h4>
-                        <h2>Payment Method</h2>
-                        <h4>30 USD(0.005412345 BTC)</h4>
-                        </div>
-                        <div className='avatar'>Avatar</div>
-                    </div>
-                </li>
 
-                <li key={Math.floor(Math.random() * Math.floor(100))}>
-                    <div>
-                        <div className="trade-body">
-                        <h4>User is buying</h4>
-                        <h2>Payment Method</h2>
-                        <h4>30 USD(0.005412345 BTC)</h4>
-                        </div>
-                        <div className='avatar'>Avatar</div>
-                    </div>
-                </li>
+type NoticeProps = {
+    trades: Array<object>,
+    onUpdateTrade: Function,
+    showMessages: Function
+};
 
-                <li key={Math.floor(Math.random() * Math.floor(100))} className='active'>
-                    <div>
-                        <div className="trade-body">
-                            <h4>User is buying</h4>
-                            <h2>Payment Method</h2>
-                            <h4>30 USD(0.005412345 BTC)</h4>
-                        </div>
-                        <div className='avatar'>Avatar</div>
-                    </div>
-                </li>
+export default class TradesList extends React.Component<NoticeProps> {
+    state = {
+        activeTrade: 0,
+        trades: this.props.trades
+    }
+    activateTrade = (id: any) => {
+        this.setState({
+            activeTrade: id
+        })
 
-                <li key={Math.floor(Math.random() * Math.floor(100))}>
-                    <div>
-                        <div className="trade-body">
-                        <h4>User is buying</h4>
-                        <h2>Payment Method</h2>
-                        <h4>30 USD(0.005412345 BTC)</h4>
-                        </div>
-                        <div className='avatar'>Avatar</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    )
+        this.props.onUpdateTrade(id)
+        this.props.showMessages()
+    }
+    render() {
+
+        return (
+            <div id='Trades' className="column">
+                <ul>
+                    {this.state.trades.map((trade: any) => (
+                        <li key={trade.id}
+                            className={this.state.activeTrade === trade.id ? 'active' : ''}
+                            onClick={() => {
+                                this.activateTrade(trade.id)
+                            }}
+                        >
+                            <div>
+                                <div className="trade-body">
+                                    <h4>{trade.user.username} is buying</h4>
+                                    <h2>{trade.type}</h2>
+                        <h4>{trade.priceUSD} USD({trade.priceUSD/8640.07} BTC)</h4>
+                                </div>
+                                <div className='avatar'>Avatar</div>
+                            </div>
+                        </li>
+                    ))}
+
+                </ul>
+            </div>
+        )
+    }
 }

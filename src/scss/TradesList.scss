@@ -3,6 +3,9 @@
   border-color: #cfd6e0;
   border-style: solid;
   z-index: 10;
+  // overflow-y: auto;
+  // overflow-x:hidden;
+  
   ul {
     margin: 0;
     padding: 0;
@@ -115,8 +118,8 @@
         > div {
           transform: translateX(20px);
           border-left: 0px;
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
         }
         &:hover {
           > div {

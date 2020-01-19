@@ -1,34 +1,34 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 12px;
+  overflow: hidden;
 }
 
-h1{
+h1 {
   font-size: 2em;
   color: #000;
 }
 
-h2{
+h2 {
   font-size: 1.6em;
-  color: #57595f
+  color: #57595f;
 }
 
-h3{
+h3 {
   font-size: 1.2em;
   color: #969697;
 }
 
-h4{
+h4 {
   font-size: 1em;
   color: #969697;
 }
 
-.container{
+.container {
   display: block;
   width: 100%;
   flex: 1;
@@ -39,16 +39,15 @@ h4{
   overflow: hidden;
 }
 
-.App{
-  display:flex;
-  /* min-height: 100vh; */
+.App {
+  display: flex;
+  min-height: 100vh;
   min-width: 100vw;
   margin: 0 auto;
   padding: 0;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  
 }
 
 .column {
@@ -65,17 +64,17 @@ h4{
   /* flex-grow: 3; */
 }
 
-.positive{
-  color: rgb(72,197,127);
+.positive {
+  color: rgb(72, 197, 127);
 }
 
-.negative{
+.negative {
   color: rgb(219, 35, 56);
 }
 
-.release-btn{
+.release-btn {
   color: white;
-  background-color: rgb(82,212,140);
+  background-color: rgb(82, 212, 140);
   border: rgb(67, 173, 115);
   border-radius: 2em;
   padding: 0.5em 2em;
@@ -83,45 +82,49 @@ h4{
   cursor: pointer;
 }
 
-.release-btn:hover{
-  border: rgb(82,212,140);
+.release-btn:hover {
+  border: rgb(82, 212, 140);
   background-color: rgb(67, 173, 115);
 }
 
-.menu-button{
+.menu-button {
   display: inline-block;
-  
 }
 
-.menu-button[data-for="main-menu"]{
+.menu-button[data-for="main-menu"] {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  
 }
 
-@media screen and (min-width: 1024px){
-  body{
+.menu-button[data-for="trade-menu"] {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
     font-size: 16px;
   }
-  .menu-button{
+  .menu-button {
     display: none;
   }
 
-  .App{
+  .App {
     display: flex;
   }
 
-  .container{
+  .container {
     display: flex;
     max-width: 1440px;
   }
 
-  .column{
-    /* height: auto; */
-  }
-  
+  /* .column {
+  } */
+
   .aside {
     transform: translateX(0%);
     /* flex-grow: 3; */
