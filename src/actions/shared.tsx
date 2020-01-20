@@ -1,4 +1,4 @@
-import API from '../utils/API'
+import API, {fetchTrades, deleteTrade}from '../utils/API'
 export const RECEIVE_DATA = 'RECEIVE_DATA'
 
 function receiveData(trades:object) {
@@ -11,8 +11,8 @@ function receiveData(trades:object) {
 export function handleInitialData() {
     return (dispatch:any) => {
         return Promise.all([
-            API.fetchTrades(),
-        ]).then((trades:Array<object>) => {
+            fetchTrades(),
+        ]).then((trades) => {
             dispatch(receiveData(trades))
         })
     }

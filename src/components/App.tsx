@@ -88,8 +88,7 @@ export const trades = [
   },
 ]
 
-
-class App extends React.Component {
+export default class App extends React.Component {
   state = {
     activeTrade: 0,
     displayMessages: false,
@@ -126,5 +125,3 @@ class App extends React.Component {
     );
   }
 }
-
-export default App;
