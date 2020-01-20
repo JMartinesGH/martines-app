@@ -4,7 +4,7 @@ import CompanyHeader from './CompanyHeader'
 import Messages from './Messages'
 import TradeInformation from './TradeInformation'
 
-const trades = [
+export const trades = [
   {
     id: 0,
     user: { username: 'John', positive: 37, negative: 1, trades: 38 },

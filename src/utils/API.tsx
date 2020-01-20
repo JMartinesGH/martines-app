@@ -1,11 +1,25 @@
-// https://api.coindesk.com/v1/bpi/currentprice/USD.json
+import {trades as tradeList} from '../components/App'
 
-export function fetchBitcoinValue(usdValue:number){
-    const endpoint = 'https://api.coindesk.com/v1/bpi/currentprice/USD.json'
+const API = {
+    fetchTrades: Promise,
+    deleteTrade: Promise
+};
 
-    return fetch(endpoint)
-        .then((res) => res.json())
-        .then((bpi) => {
-            return bpi.USD;
-        })
+let trades = tradeList;
+
+export let fetchTrades = () => {
+    return new Promise((res, rej) => {
+        setTimeout(function () {
+            res(trades)
+        }, 2000)
+    })
 }
+export let deleteTrade = (id:number) => {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            trades = trades.filter((trade) => trade.id !== id);
+        }, 300)
+    });
+}
+
+export default App;

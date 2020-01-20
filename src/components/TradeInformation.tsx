@@ -1,10 +1,7 @@
 import React from 'react';
 import '../css/TradeInformation.css';
-import {fetchBitcoinValue} from '../utils/API'
 
-function bitcoinInfo(usd: number){
-    fetchBitcoinValue(usd)
-}
+
 
 export default function TrandeInformation(props:any) {
     return (
