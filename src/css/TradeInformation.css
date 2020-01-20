@@ -34,6 +34,8 @@
 }
 @media screen and (min-width: 1024px) {
   #TradeInformation {
+    transform: translateX(0%);
+    width: 100%;
     top: 0;
     position: relative;
   }

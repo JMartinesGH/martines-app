@@ -6,13 +6,13 @@ let Messages = (props: any) => {
         <div id='Messages' className={`column aside ${props.isActive ? 'display' : ''}`}>
             <header>
                 <button onClick={() => props.toggleMessages() }>Back</button>
+                <button onClick={() => props.toggleInformation() }>Information</button>
                 <h2>{props.trades[props.activeTrade].type}</h2>
                 <h3>{props.trades[props.activeTrade].user.username}
                     <span className='positive'>+{props.trades[props.activeTrade].user.positive}</span>
                     {props.trades[props.activeTrade].user.negative ? '/' : ''}
                     <span className='negative'>{props.trades[props.activeTrade].user.negative ? '-' + props.trades[props.activeTrade].user.negative : ''}</span>
                 </h3>
-                <button onClick={() => props.toggleInformation() }>Information</button>
                 <hr />
             </header>
             <article>

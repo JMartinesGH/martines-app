@@ -120,7 +120,7 @@ class App extends React.Component {
         <div className='container'>
           <TradesList trades={trades} onUpdateTrade={this.updateTrade} showMessages={this.toggleMessages}/>
           <Messages trades={trades} activeTrade={this.state.activeTrade} isActive={this.state.displayMessages} toggleMessages={this.toggleMessages} toggleInformation={this.toggleInformation}/>
-          <TradeInformation trade={trades[this.state.activeTrade]} isActive={this.state.displayInformation}/>
+          <TradeInformation trade={trades[this.state.activeTrade]} isActive={this.state.displayInformation} toggleInformation={this.toggleInformation}/>
         </div>
       </div>
     );

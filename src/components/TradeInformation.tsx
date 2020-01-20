@@ -9,6 +9,7 @@ function bitcoinInfo(usd: number){
 export default function TrandeInformation(props:any) {
     return (
         <div id='TradeInformation' className={`column right aside ${props.isActive ? 'display' : ''}`}>
+            <button onClick={() => props.toggleInformation() }>Back</button>
             <div className='info'>
                 <h2>You are trading with {props.trade.user.username}</h2>
                 <h3>Started XX minutes ago</h3>
